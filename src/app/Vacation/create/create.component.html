@@ -1,0 +1,52 @@
+<div id="addForm">
+<form [formGroup]="vacation" (ngSubmit)="onSubmit()" novalidate>
+    <h1>Add new vacation</h1>
+    <div class="form-group">
+        <div class="c1">
+            <label for="userName">Name</label>
+             <select id="empName">
+                 <option *ngFor="let emp of employees" [value]="emp.employeeName">{{emp.employeeName}}</option>
+                </select>
+        </div>
+        <div class="c2">
+                <label for="vacationS">Vacation Start</label>     
+                <input type="date" 
+                id="start" 
+                name="trip-start"
+                value="2018-07-22" 
+                formControlName="vacationStart"
+                min="2000-01-01" 
+                max="2030-12-31">
+            </div>
+            <div class="c3">
+                    <label for="vacationE">Vacation End</label>
+                    <input type="date" 
+                    id="start1" 
+                    name="trip-start"
+                    value="2019-01-01" 
+                    formControlName="vacationEnd"
+                    min="2000-01-01" 
+                    max="2030-12-31">
+                </div>
+            <div class="c4">
+                <label for="superior">Superior</label>
+                <select id="supName">
+                    <option *ngFor="let emp of employees" [value]="emp.employeeName">{{emp.employeeName}}</option>
+                   </select>
+                </div>    
+                <div class="c4">
+                    <label for="numberOfDays">Number of days</label>
+                    <input name="numberOfDays"
+                    type="text" 
+                    class="form-control" 
+                    id="numberOfDays" 
+                    placeholder="Type numberOfDays" 
+                    formControlName="numberOfDays"
+                    >
+                </div>      
+    </div>
+    <div>
+        <button id="button" class="button" (click) ="getTrainingName()">Submit</button>
+    </div>
+</form>
+</div>

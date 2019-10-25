@@ -1,0 +1,76 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+.logo {
+    background: url('vacationlogo.png');
+    width: 200px;
+    height: 200px;
+}
+.list {
+    font-size: 20px;
+    border: 2px solid;
+    padding: 5px;
+}
+
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 0 35px grey;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff 40%, #797777 100%);
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin: 0 20px;
+    color: rgb(1, 11, 146);
+}
+
+li:hover {
+    background-color: lightcoral;
+}
+
+main {
+    padding: 30px;
+    height: auto;
+}
+
+aside {
+    float: right;
+    max-width: 20%;
+    min-width: 20%;
+    min-height: 700px;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+.outlet {
+    float: left;
+    max-width: 80%;
+    min-width: 80%;
+    min-height: 500px;
+    padding-right: 50px;
+}
+h1 {
+    font-size: 45px;
+    padding: 30px;
+    color: rgb(0, 81, 255);
+}

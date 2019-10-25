@@ -1,0 +1,32 @@
+<div id="Vtable"><h1> Vacation's List</h1>
+    <table class="table">
+      <tbody>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Vacation start</td>
+            <td>Vacation end</td>
+            <td>Superior</td>
+            <td>Number of days</td>
+            <td>Vacation status</td>
+      <tr *ngFor="let vacation of vacations">
+      <td>{{vacation.vacationID}}</td>
+      <td>{{vacation.userName}}</td>
+      <td>{{vacation.vacationStart}}</td>
+      <td>{{vacation.vacationEnd}}</td>
+      <td>{{vacation.superior}}</td>
+      <td>{{vacation.numberOfDays}}</td>
+      <td>{{vacation.status}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <div id="de">
+    <form [formGroup]="vacation">
+      <label for="vacationS">Enter vacation ID    :</label>     
+      <input name="numberOfDays" type="text" class="form-control" id="vacationid" placeholder="ID" formControlName="vacationID">
+      <label for="vacationS">...</label>  
+                <button (click)="accept()">Accept</button>
+                <label for="vacationS">       OR </label>  
+                <button (click)="reject()">Reject</button>
+      </form>
+      <div>
+</div>
